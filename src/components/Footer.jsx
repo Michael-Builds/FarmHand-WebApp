@@ -1,0 +1,74 @@
+import { LuPhoneCall } from "react-icons/lu";
+import { IoLocationSharp } from "react-icons/io5";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaXTwitter,
+} from "react-icons/fa6";
+
+const socialmedia = [
+  { icon: FaFacebookF, link: "https://www.facebook.com" },
+  { icon: FaInstagram, link: "https://www.instagram.com" },
+  { icon: FaLinkedinIn, link: "https://www.linkedin.com" },
+  { icon: FaXTwitter, link: "https://www.twitter.com" },
+];
+
+const Main = () => {
+  return (
+    <section className="bg-darkbg ">
+      <div className="flex justify-around pt-6 pb-2">
+        <div className=" justify-center">
+          <div className="flex items-center gap-3">
+            <div className="bg-white p-1.5 rounded-full">
+              <LuPhoneCall className="" />
+            </div>
+            <h1 className="font-quicksand font-medium text-white text-xl">
+              Contact Us
+            </h1>
+          </div>
+          <p className="font-quicksand mt-2 text-sm text-center text-white">
+            +233 279 282 372
+          </p>
+        </div>
+
+        <div className=" justify-center">
+          <div className="flex items-center gap-3">
+            <div className="bg-white p-1.5 rounded-full">
+              <IoLocationSharp className="" />
+            </div>
+            <h1 className="font-quicksand font-medium text-white text-xl">
+              Location
+            </h1>
+          </div>
+          <p className="font-quicksand mt-2 text-sm text-center text-white">
+            Togbe Tewiah Building
+          </p>
+        </div>
+        <div className="justify-center">
+          <h1 className="font-quicksand text-center font-medium text-white text-xl">
+            Follow us
+          </h1>
+          <div className="flex items-center gap-1.5 mt-2">
+            {socialmedia.map((item, index) => (
+              <a
+                key={index}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="bg-white p-1.5 rounded-full">
+                  <item.icon className="" />
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+      <p className="text-center pb-8 font-quicksand text-white text-xs mt-4 hover:text-orange-600 cursor-pointer">
+        Powered by NodeEight
+      </p>
+    </section>
+  );
+};
+export default Main;
