@@ -1,9 +1,14 @@
+// Importing Flowbite plugin at the top of the file
+import flowbitePlugin from 'flowbite/plugin';
+
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./src/**/*.{html,js}"],
+const config = {
+  content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {},
   },
-  plugins: [],
-}
+  // Using the imported plugin directly
+  plugins: [flowbitePlugin],
+};
 
+export default config;
