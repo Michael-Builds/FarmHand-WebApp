@@ -12,8 +12,8 @@ const HeroSection = () => {
       style={{ backgroundImage: `url(${Bg})` }}
     >
       <div className="absolute inset-0 bg-black opacity-30"></div>
-      <div className="absolute inset-0 flex pl-32 flex-col items-start justify-center text-white z-10 px-8 max-w-7xl">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 font-quicksand ">
+      <div className="absolute inset-0 flex lg:pl-32 flex-col items-start justify-center text-white z-10 px-8 max-w-7xl">
+        <h1 className="lg:text-6xl text-xl md:text-6xl font-bold mb-4 font-quicksand ">
           Connect with skilled laborers in no time for all your farm work needs{" "}
         </h1>
 
