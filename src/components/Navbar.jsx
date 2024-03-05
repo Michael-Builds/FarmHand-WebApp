@@ -18,7 +18,7 @@ function Example() {
   return (
     <Disclosure
       as="nav"
-      className="fixed -pt-4 w-full z-20 transition-colors duration-300 ease-in-out  bg-white"
+      className="fixed shadow-lg  w-full z-20 transition-colors duration-300 ease-in-out  bg-white"
     >
       {({ open: disclosureOpen }) => (
         <>
