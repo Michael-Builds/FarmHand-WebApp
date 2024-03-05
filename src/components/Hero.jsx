@@ -52,7 +52,7 @@ const HeroSection = () => {
         </Modal>
         <button
           onClick={open}
-          className="mt-4 bg-green-500 font-quicksand hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-md shadow-lg transition duration-300 ease-in-out"
+          className="mt-4 bg-green-500 lg:text-base text-sm font-quicksand hover:bg-green-600 text-white font-semibold lg:py-3 lg:px-6 py-2.5 px-4 rounded-md shadow-lg transition duration-300 ease-in-out"
         >
           Register Now
         </button>

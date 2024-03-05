@@ -26,7 +26,7 @@ const Main = () => {
         Why FarmHand?
       </h1>
       <div className="flex flex-col items-center justify-center lg:mt-8 mt-16 p-2">
-        <div className="flex flex-col sm:flex-row items-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center gap-4 md:pl-4 md:pr-4 ">
           <img src={About1} className="rounded-lg" />
           <div className="flex flex-col items-center sm:items-start">
             {textBlocks1.map((block, index) => (
@@ -41,7 +41,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="flex flex-col-reverse sm:flex-row items-center gap-4 mt-12 mb-12">
+        <div className="flex flex-col-reverse sm:flex-row items-center gap-4 mt-12 mb-12 md:pr-4 md:pl-4">
           <div className="flex flex-col items-center w-full">
             {textBlocks2.map((block, index) => (
               <div

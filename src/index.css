@@ -9,6 +9,12 @@
 /* tailwindcss utility styles */
 @import "tailwindcss/utilities";
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 640px) {
   .footer {
     flex-direction: column;
