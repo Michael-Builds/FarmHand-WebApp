@@ -83,8 +83,8 @@ const Navigation = () => {
                           />
                           <TextInput
                             mt="md"
-                            label="Email"
-                            placeholder="Email"
+                            label="Phone Number"
+                            placeholder="Phone Number"
                             className="font-quicksand"
                           />
                           <TextInput
@@ -97,6 +97,12 @@ const Navigation = () => {
                             mt="md"
                             label="Farm-Type"
                             placeholder="Farm-Type"
+                            className="font-quicksand"
+                          />
+                          <TextInput
+                            mt="md"
+                            label="Type of Service"
+                            placeholder="Type of Service"
                             className="font-quicksand"
                           />
 
