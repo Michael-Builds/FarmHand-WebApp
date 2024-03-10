@@ -16,7 +16,7 @@ const socialmedia = [
 
 const Main = () => {
   return (
-    <section className="bg-darkbg ">
+    <section id="footer" className="bg-darkbg pb-6 pt-2">
       <div className="flex flex-col md:flex-row justify-around pt-6 pb-2 w-full">
         <div className="flex flex-col justify-center items-center mb-4 md:mb-0">
           <div className="flex items-center gap-3">
@@ -66,10 +66,9 @@ const Main = () => {
           </div>
         </div>
       </div>
-
-      <p className="text-center pb-8 font-quicksand text-white text-xs mt-4 hover:text-orange-600 cursor-pointer">
+      {/* <p className="text-center pb-8 font-quicksand text-white text-xs mt-4 hover:text-orange-600 cursor-pointer">
         Powered by NodeEight
-      </p>
+      </p> */}
     </section>
   );
 };

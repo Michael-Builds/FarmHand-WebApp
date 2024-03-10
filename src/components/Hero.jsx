@@ -1,19 +1,20 @@
-import Bg from "../assets/bg.png";
+import Bg from "../assets/Main.jpg";
 import { useDisclosure } from "@mantine/hooks";
 import { Modal } from "@mantine/core";
-import { TextInput, Button, Group, Box } from "@mantine/core";
+import { TextInput, Group, Box } from "@mantine/core";
 
 const HeroSection = () => {
   const [opened, { open, close }] = useDisclosure(false);
 
   return (
     <div
-      className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center"
+      id="hero"
+      className="relative bg-cover bg-fit bg-center bg-no-repeat h-screen flex items-center justify-center"
       style={{ backgroundImage: `url(${Bg})` }}
     >
-      <div className="absolute inset-0 bg-black opacity-30"></div>
+      <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="absolute inset-0 flex lg:pl-32 flex-col items-start justify-center text-white z-10 px-8 max-w-7xl">
-        <h1 className="lg:text-6xl text-xl md:text-6xl font-bold mb-4 font-quicksand ">
+        <h1 className="lg:text-5xl text-xl md:text-6xl font-bold xl:mb-4 mb-2 font-quicksand ">
           Connect with skilled laborers in no time for all your farm work needs{" "}
         </h1>
 
@@ -44,15 +45,28 @@ const HeroSection = () => {
               placeholder="Email"
               className="font-quicksand"
             />
+            <TextInput
+              mt="md"
+              label="Location"
+              placeholder="Location"
+              className="font-quicksand"
+            />
+            <TextInput
+              mt="md"
+              label="Farm-Type"
+              placeholder="Farm-Type"
+              className="font-quicksand"
+            />
 
-            <Group justify="center" mt="xl">
-              <Button className="font-quicksand">Submit</Button>
+            <Group mt="lg" className="flex justify-end ">
+              <button className="font-quicksand rounded-sm text-white p-2 pl-3 pr-3 bg-red-500">Cancel</button>
+              <button className="font-quicksand rounded-sm text-white p-2 pl-3 pr-3 bg-green-500">Submit</button>
             </Group>
           </Box>
         </Modal>
         <button
           onClick={open}
-          className="mt-4 bg-green-500 lg:text-base text-sm font-quicksand hover:bg-green-600 text-white font-semibold lg:py-3 lg:px-6 py-2.5 px-4 rounded-md shadow-lg transition duration-300 ease-in-out"
+          className="mt-4 bg-green-500 lg:text-base text-sm font-quicksand hover:bg-green-600 text-white font-semibold lg:py-3 lg:px-6 py-3 px-5 rounded-md shadow-lg transition duration-300 ease-in-out"
         >
           Register Now
         </button>

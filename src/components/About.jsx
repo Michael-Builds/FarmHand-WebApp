@@ -1,16 +1,16 @@
 import About from "../assets/about.png";
 const Main = () => {
   return (
-    <div className="h-full p-4 bg-background flex flex-col lg:flex-row items-center lg:justify-between">
-      <div className="lg:pr-32 lg:order-2">
+    <div id="about" className="h-full p-4 bg-background flex flex-col lg:flex-row items-center gap-8 lg:justify-between">
+      <div className="lg:pr-24 lg:order-2">
         <img
           src={About}
-          className="lg:h-[32rem]  lg:h-auto rounded-lg lg:mt-4 mt-8 lg:mt-0"
+          className=" rounded-lg lg:mt-4 mt-8 lg:mt-0"
         />
       </div>
 
-      <div className="font-quicksand lg:ml-16 lg:order-1">
-        <h1 className="text-4xl text-white lg:-mt-12 mt-6 font-medium ">
+      <div className="font-quicksand lg:ml-8 lg:order-1">
+        <h1 className="text-4xl text-white lg:-mt-12 text-center mt-6 font-bold ">
           About us
         </h1>
         <p className="font-quicksand max-w-4xl text-white mt-6 lg:text-lg text-xs">
