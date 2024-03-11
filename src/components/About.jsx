@@ -104,9 +104,9 @@ const Main = () => {
 
       {/* Image div */}
       <div className="lg:pr-24 order-2 lg:order-2">
-        <div className="grid grid-cols-2 xl:p-6 xl:gap-8 gap-5 xl:mt-0 -mt-10">
+        <div className="grid grid-cols-2 xl:p-6 xl:gap-8 gap-5 xl:mt-0 -mt-10 mb-8">
           {data.map((item, index) => (
-            <img key={index} src={item.image} alt={`Item ${index + 1}`} className="rounded-lg h-[10rem] w-[15rem] object-cover lg:mt-4 mt-8 lg:mt-0 xl:h-[18rem] xl:w-[18rem]" />
+            <img key={index} src={item.image} alt={`Item ${index + 1}`} className="rounded-lg  -mb-8 h-[10rem] w-[15rem] object-cover lg:mt-4 mt-8 lg:mt-0 xl:h-[18rem] xl:w-[18rem]" />
           ))}
         </div>
       </div>
