@@ -21,3 +21,19 @@ body {
     align-items: center;
   }
 }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+}

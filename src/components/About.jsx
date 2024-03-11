@@ -9,6 +9,7 @@ const Main = () => {
   const Tractor = "https://media.sciencephoto.com/f0/17/66/93/f0176693-800px-wm.jpg"
   const Harvestor = "https://st2.depositphotos.com/1426049/7905/i/450/depositphotos_79057734-combine-harvester.jpg"
   const Farmers = "https://cdn.vanguardngr.com/wp-content/uploads/2021/03/Farmers-at-Work-in-their-Various-Farms.jpg"
+
   const [opened, { open, close }] = useDisclosure(false);
 
   const data = [
@@ -30,10 +31,11 @@ const Main = () => {
     }
   ]
 
+
+
   return (
     <div id="about" className="h-full p-4 bg-background flex flex-col lg:flex-row items-center gap-8 lg:justify-between">
-     
-      {/* Main div */}
+
       <div className="font-quicksand lg:ml-8 order-1 lg:order-1">
         <h1 className="text-4xl text-white lg:-mt-12 text-center mt-6 font-bold">
           About us
@@ -102,11 +104,20 @@ const Main = () => {
         </button>
       </div>
 
-      {/* Image div */}
       <div className="lg:pr-24 order-2 lg:order-2">
         <div className="grid grid-cols-2 xl:p-6 xl:gap-8 gap-5 xl:mt-0 -mt-10 mb-8">
           {data.map((item, index) => (
-            <img key={index} src={item.image} alt={`Item ${index + 1}`} className="rounded-lg  -mb-8 h-[10rem] w-[15rem] object-cover lg:mt-4 mt-8 lg:mt-0 xl:h-[18rem] xl:w-[18rem]" />
+            <img
+              key={index}
+              src={item.image}
+              alt={`Item ${index + 1}`}
+              className="rounded-lg -mb-8 h-[10rem] w-[15rem] object-cover lg:mt-4 mt-8 lg:mt-0 xl:h-[18rem] xl:w-[18rem] fade-in-left"
+              style={{
+                animationDuration: '1s',
+                animationDelay: `${index * 0.2}s`,
+              }}
+            />
+
           ))}
         </div>
       </div>
