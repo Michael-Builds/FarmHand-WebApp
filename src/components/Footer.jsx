@@ -14,6 +14,7 @@ const socialmedia = [
   { icon: FaXTwitter, link: "https://www.twitter.com" },
 ];
 
+
 const Main = () => {
   return (
     <section id="footer" className="bg-darkbg pb-6 pt-2">
