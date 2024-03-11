@@ -5,7 +5,10 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTop";
 
-function App() {
+const App = () => {
+
+
+
   return (
     <div>
       <Navbar />
@@ -17,5 +20,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

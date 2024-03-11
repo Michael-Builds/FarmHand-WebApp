@@ -1,7 +1,38 @@
-// import About from "../assets/about.png";
 import { useDisclosure } from "@mantine/hooks";
 import { Modal } from "@mantine/core";
 import { TextInput, Group, Box } from "@mantine/core";
+import { useInView } from "react-intersection-observer";
+import PropTypes from 'prop-types';
+
+const InViewImage = ({ src, alt, delay }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  InViewImage.propTypes = {
+    src: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+    delay: PropTypes.string,
+  };
+
+  const animationClass = inView ? 'fade-in-left' : '';
+  const style = {
+    animationDuration: '1s',
+    animationDelay: `${delay}s`,
+  };
+
+  return (
+    <img
+      ref={ref}
+      src={src}
+      alt={alt}
+      className={`rounded-lg -mb-8 h-[10rem] w-[15rem] object-cover lg:mt-4 mt-8 lg:mt-0 xl:h-[18rem] xl:w-[18rem] ${animationClass}`}
+      style={style}
+    />
+  );
+};
+
 
 const Main = () => {
 
@@ -11,26 +42,6 @@ const Main = () => {
   const Farmers = "https://cdn.vanguardngr.com/wp-content/uploads/2021/03/Farmers-at-Work-in-their-Various-Farms.jpg"
 
   const [opened, { open, close }] = useDisclosure(false);
-
-  const data = [
-    {
-      id: 1,
-      image: Drone
-    },
-    {
-      id: 2,
-      image: Tractor
-    },
-    {
-      id: 3,
-      image: Harvestor
-    },
-    {
-      id: 4,
-      image: Farmers
-    }
-  ]
-
 
 
   return (
@@ -106,23 +117,16 @@ const Main = () => {
 
       <div className="lg:pr-24 order-2 lg:order-2">
         <div className="grid grid-cols-2 xl:p-6 xl:gap-8 gap-5 xl:mt-0 -mt-10 mb-8">
-          {data.map((item, index) => (
-            <img
-              key={index}
-              src={item.image}
-              alt={`Item ${index + 1}`}
-              className="rounded-lg -mb-8 h-[10rem] w-[15rem] object-cover lg:mt-4 mt-8 lg:mt-0 xl:h-[18rem] xl:w-[18rem] fade-in-left"
-              style={{
-                animationDuration: '1s',
-                animationDelay: `${index * 0.2}s`,
-              }}
-            />
-
-          ))}
+          <InViewImage src={Drone} alt="Drone" delay={0.2} />
+          <InViewImage src={Tractor} alt="Tractor" delay={0.4} />
+          <InViewImage src={Harvestor} alt="Harvestor" delay={0.6} />
+          <InViewImage src={Farmers} alt="Farmers" delay={0.8} />
         </div>
       </div>
     </div>
   );
 };
+
+
 
 export default Main;

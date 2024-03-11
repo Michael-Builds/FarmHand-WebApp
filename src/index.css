@@ -37,3 +37,39 @@ body {
   animation-name: fadeInLeft;
   animation-fill-mode: both;
 }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s forwards;
+}
+
+@media (max-width: 768px) {
+  .fade-in-left,
+  .fade-in-right {
+    animation-duration: 0.8s;
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+  }
+}
