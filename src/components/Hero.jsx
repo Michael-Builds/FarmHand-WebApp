@@ -74,7 +74,7 @@ const HeroSection = () => {
           onClick={open}
           className="mt-4 bg-green-500 lg:text-base text-sm font-quicksand hover:bg-green-600 text-white font-semibold lg:py-3 lg:px-6 py-3 px-5 rounded-md shadow-lg transition duration-300 ease-in-out"
         >
-          Register Now
+          Get a labourer instantly
         </button>
       </div>
     </div>

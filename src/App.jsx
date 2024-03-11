@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import WhyChooseUs from "./components/WhyChooseUs";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import ScrollToTopButton from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <WhyChooseUs />
       <About />
+      <ScrollToTopButton />
       <Footer />
     </div>
   );

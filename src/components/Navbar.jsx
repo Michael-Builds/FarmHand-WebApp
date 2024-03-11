@@ -112,7 +112,7 @@ const Navigation = () => {
                           </Group>
                         </Box>
                       </Modal>
-                      <button onClick={handleSignUpClick} className="text-center text-base  bg-gray-400 pl-4 pr-4 pt-1.5 pb-1.5 rounded-full font-quicksand">Sign Up</button>
+                      <button onClick={handleSignUpClick} className="text-center text-base  bg-gray-400 pl-4 pr-4 pt-1.5 pb-1.5 rounded-full font-quicksand"> Get a labourer now</button>
                     </div>
                   </div>
                 </div>
@@ -176,9 +176,9 @@ const Navigation = () => {
               </Modal>
               <button
                 onClick={handleSignUpClick}
-                className="block pl-6 pr-6 text-center text-base bg-gray-400 py-2 rounded-full text-white hover:bg-gray-500"
+                className="block pl-6 pr-6 font-quicksand text-sm text-center text-base bg-gray-400 py-2 rounded-full text-white hover:bg-gray-500"
               >
-                Sign Up
+                Get a labourer now
               </button>
             </div>
           </Disclosure.Panel>
