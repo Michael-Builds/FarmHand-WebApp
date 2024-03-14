@@ -111,7 +111,7 @@ const Main = () => {
           </Box>
         </Modal>
         <button onClick={open} className="bg-white p-2 pt-3 pb-3 pl-3 pr-3 mt-8 rounded-full xl:text-base text-sm">
-          Find a labourer now!
+          Find a labourer now
         </button>
       </div>
 

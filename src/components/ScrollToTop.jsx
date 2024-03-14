@@ -20,9 +20,7 @@ const ScrollToTopButton = () => {
                 setIsVisible(false);
             }
         };
-
         window.addEventListener('scroll', toggleVisibility);
-
         return () => window.removeEventListener('scroll', toggleVisibility);
     }, []);
 
@@ -31,7 +29,7 @@ const ScrollToTopButton = () => {
             {isVisible && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-5 w-9 right-5 z-50 p-2 bg-blue-500 text-white rounded-full text-sm hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none shadow-lg"
+                    className="fixed bottom-5 w-14 h-14 right-5 z-50 p-2 bg-blue-500 text-white rounded-full text-sm hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none shadow-lg"
                     aria-label="Scroll to top"
                 >
                     ↑

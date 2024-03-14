@@ -28,8 +28,8 @@ const Main = () => {
               Contact Us
             </h1>
           </div>
-          <p className="font-quicksand xl:ml-10 mt-2 text-xs lg:text-sm text-center text-white">
-            +233 279 282 372
+          <p className="font-quicksand mt-2 text-xs lg:text-sm text-center text-white">
+            +233 555 992 084
           </p>
         </div>
 
@@ -42,7 +42,7 @@ const Main = () => {
               Location
             </h1>
           </div>
-          <p className="font-quicksand xl:ml-24 mt-2 text-xs lg:text-sm  text-center text-white">
+          <p className="font-quicksand  mt-2 text-xs lg:text-sm  text-center text-white">
             Togbe Tewiah Building
           </p>
         </div>

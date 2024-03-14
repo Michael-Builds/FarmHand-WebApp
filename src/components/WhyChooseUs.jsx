@@ -33,7 +33,6 @@ const Main = () => {
         Farmhand gives you access to :
       </h1>
       <div className="flex flex-col items-center justify-center lg:mt-8 mt-16 p-2 xl:pl-[15%]">
-
         <div className="flex flex-col sm:flex-row items-center gap-4 md:p-4 w-full xl:mb-6">
           <img
             ref={ref}
