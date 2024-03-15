@@ -23,8 +23,8 @@ const textBlocks1 = [
 const Main = () => {
 
   const { ref, inView } = useInView({
-    triggerOnce: true, // Animation will only play once
-    threshold: 0.1, // Trigger when 10% of the element is visible
+    triggerOnce: true,
+    threshold: 0.1, 
   });
 
   return (

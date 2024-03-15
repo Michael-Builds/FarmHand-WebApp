@@ -20,8 +20,8 @@ const Navigation = () => {
   const [opened, { open, close }] = useDisclosure(false);
 
   const handleSignUpClick = () => {
-    scrollTo('home'); // Optionally scroll to 'home' section if needed
-    open(); // Open the modal
+    scrollTo('home');
+    open();
   };
 
 
