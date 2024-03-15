@@ -41,7 +41,7 @@ const Main = () => {
             className={`rounded-lg sm:w-auto w-full xl:mb-0 -mb-6 ${inView ? 'fade-in-right' : ''}`} />
           <div className="flex flex-col items-center sm:items-start w-full xl:p-0 p-4">
             {textBlocks1.map((block, index) => (
-              <div key={index} className="font-quicksand  max-w-3xl mt-4  flex items-center gap-4">
+              <div key={index} className="font-quicksand max-w-3xl mt-4 flex items-center gap-4">
                 <IoCheckmarkDone className="lg:h-6 lg:w-6 h-8 w-8 text-green-600" />
                 <p className="lg:text-lg text-sm xl:mt-0">{block.text}</p>
               </div>
