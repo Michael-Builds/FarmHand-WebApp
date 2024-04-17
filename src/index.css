@@ -73,3 +73,26 @@ body {
     }
   }
 }
+
+@media (max-width: 320px) {
+  .hide {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .hide {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hide {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+}

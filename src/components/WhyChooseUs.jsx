@@ -2,8 +2,6 @@ import About1 from "../assets/abt1.png";
 import { useInView } from 'react-intersection-observer';
 import { IoCheckmarkDone } from "react-icons/io5";
 
-
-
 const textBlocks1 = [
   {
     text: "Affordable local farm laborers available for you.",
